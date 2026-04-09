@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fs": "^0.0.1-security",
+    "nodemailer": "^8.0.5",
+    "path": "^0.12.7",
+    "resend": "^6.10.0",
+    "uuid": "^13.0.0"
+  }
+}

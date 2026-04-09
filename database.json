@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "user_1775750975535_6mex16n40",
+      "username": "Gian",
+      "email": "giancarlonolasco6@gmail.com",
+      "password": "123456",
+      "createdAt": "2026-04-09T16:09:35.536Z",
+      "cart": []
+    }
+  ],
+  "version": "1.0.0"
+}
