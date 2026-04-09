@@ -8,7 +8,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 const DB_PATH = path.join(__dirname, 'database.json');
 
-const resend = new Resend("re_your_api_key_here");
+const resend = new Resend("re_Ca7d2Zf2_ASQk7Nu8F78YPtxFVTRZZjnm");
 
 const app = express();
 app.use(cors());
