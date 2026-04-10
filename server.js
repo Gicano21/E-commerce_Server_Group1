@@ -29,7 +29,7 @@ app.post("/register", async (req, res) => {
     const verifyLink = `${protocol}://${host}/verify/${token}`;
 
     const { data, error } = await resend.emails.send({
-      from: 'Tech Store <onboarding@resend.dev">', // Use this default for testing
+      from: 'Onboarding <onboarding@resend.dev', // Use this default for testing
       to: Email,
       subject: "Verify your email",
       html: `<div style="text-align: center; background-color: navy; color: white; border-radius: 5%">
