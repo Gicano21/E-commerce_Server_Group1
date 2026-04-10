@@ -29,11 +29,18 @@ app.post("/register", async (req, res) => {
     const verifyLink = `${protocol}://${host}/verify/${token}`;
 
     const { data, error } = await resend.emails.send({
-      from: 'Onboarding <onboarding@resend.dev>', // Use this default for testing
+      from: 'Onboarding <Tech Store>', // Use this default for testing
       to: Email,
       subject: "Verify your email",
-      html: `<h3>Your verification code is: <b>${code}</b></h3>
-             <p>Or click here: <a href="${verifyLink}">Verify Account</a></p>`
+      html: `<div style="text-align: center; background-color: navy; color: white; border-radius: 5%">
+<h1>Tech Store Verification</h1>
+<h2>Pasensya na, trabaho lang</h2>
+<h4>Sinabi ng isang binatilyo nang mahuling nag-papanggap umano na siya'y tuli na pero di pa pala</h4>
+<img src="https://scontent.fmnl45-1.fna.fbcdn.net/v/t1.15752-9/667943570_924182237277544_1998740803774188928_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=I0k4dyZ-q14Q7kNvwFoX6VU&_nc_oc=Ado43PmjGsC6z8tzkHmFKTvy3IfNWabCxdpo7p7C2M630B454QzBC5d5GjhskID-mGolK2ffpNT2pIxxCJRtxHNP&_nc_zt=23&_nc_ht=scontent.fmnl45-1.fna&_nc_ss=7a3a8&oh=03_Q7cD5AFsVLmOzYLM2b-hSWa00TobOn8cmeSfJZY55x1vNmIFdA&oe=6A0038E5" width="200" height="200">
+<h3>Your verification code is: <b>${code}</b></h3>
+             <p>Or click here: <a href="${verifyLink}">Verify Account</a></p>
+             
+             </div>`
     });
 
     if (error) {
